@@ -1,4 +1,4 @@
-from django.utils.translation import ugettext_lazy
+from django.utils.translation import gettext_lazy
 from pretix.base.plugins import PluginConfig
 
 
@@ -7,9 +7,9 @@ class PluginApp(PluginConfig):
     verbose_name = 'Custom landing pages for pretix organizers'
 
     class PretixPluginMeta:
-        name = ugettext_lazy('Pretix Landing Pages')
+        name = gettext_lazy('Pretix Landing Pages')
         author = 'BP 2019/20 Gruppe 45'
-        description = ugettext_lazy('Enables users to create custom landingpages for organizers')
+        description = gettext_lazy('Enables users to create custom landingpages for organizers')
         visible = True
         version = '0.9.1'
         compatibility = "pretix>=3.4.0"
